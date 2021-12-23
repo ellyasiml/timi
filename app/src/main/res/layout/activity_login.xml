@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/bg_light">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/login"
+            android:textColor="@color/dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enter_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_alignStart="@+id/login"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/login_enter"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/enter_login"
+            android:layout_alignStart="@+id/enter_login"
+            android:layout_marginBottom="14dp"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:textColor="@color/dark"
+            android:textSize="12sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/login_username"
+            android:layout_alignStart="@+id/login_username"
+            android:layout_marginBottom="14dp"
+            android:autofillHints=""
+            android:hint="@string/password_hint"
+            android:inputType="text|textPassword"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/login_password"
+            android:layout_alignStart="@+id/login_password"
+            android:layout_alignEnd="@+id/login_password"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/remember"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_marginBottom="14dp"
+            android:text="@string/login_login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_login"
+            android:layout_alignStart="@+id/login_login"
+            android:layout_alignEnd="@+id/login_login"
+            android:layout_marginBottom="30dp"
+            android:text="@string/login_register"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

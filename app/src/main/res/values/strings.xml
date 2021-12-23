@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">timi</string>
+    <string name="register">Sign Into Timi</string>
+    <string name="register_enter">Please enter your details to continue.</string>
+    <string name="name_hint">My Name</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="age">Age :</string>
+    <string name="gender">Gender :</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="tnc">I aggree with terms and policies.</string>
+    <string name="register_register">Sign in</string>
+    <string name="register_login">Already have account? Log in</string>
+
+    <string name="login">Log Into Timi</string>
+    <string name="login_enter">Enter your username and password.</string>
+    <string name="remember">Remember me</string>
+    <string name="login_login">Log in</string>
+    <string name="login_register">Do not have account? Sign in</string>
+
+</resources>

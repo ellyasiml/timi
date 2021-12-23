@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/bg_light">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/register"
+            android:textColor="@color/dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enter_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register"
+            android:layout_alignStart="@+id/register"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/register_enter"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/enter_register"
+            android:layout_alignStart="@+id/enter_register"
+            android:layout_marginBottom="14dp"
+            android:hint="@string/name_hint"
+            android:inputType="text"
+            android:textColor="@color/dark"
+            android:textSize="12sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/register_name"
+            android:layout_alignStart="@+id/register_name"
+            android:layout_marginBottom="14dp"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:textColor="@color/dark"
+            android:textSize="12sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/register_username"
+            android:layout_alignStart="@+id/register_username"
+            android:layout_marginBottom="14dp"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColor="@color/dark"
+            android:textSize="12sp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/register_gendertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_age"
+            android:layout_alignStart="@id/register_password"
+            android:layout_alignEnd="@id/register_password"
+            android:layout_marginTop="14dp"
+            android:text="@string/gender"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/register_agetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/age"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <SeekBar
+            android:id="@+id/register_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_agetext"
+            android:layout_alignStart="@+id/register_password"
+            android:layout_alignEnd="@+id/register_password"
+            android:layout_marginVertical="14dp" />
+
+        <RadioGroup
+            android:id="@+id/register_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_gendertext"
+            android:layout_alignStart="@+id/register_password"
+            android:layout_alignEnd="@+id/register_password"
+            android:layout_centerHorizontal="true"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="@string/male"
+                android:textColor="@color/dark"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="@string/female"
+                android:textColor="@color/dark"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/register_tnc"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/register_gender"
+            android:layout_alignStart="@+id/register_password"
+            android:layout_alignEnd="@+id/register_password"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/tnc"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/register_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_tnc"
+            android:layout_alignStart="@+id/register_password"
+            android:layout_alignEnd="@+id/register_password"
+            android:layout_marginBottom="14dp"
+            android:text="@string/register_register"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_sign"
+            android:layout_alignStart="@+id/register_sign"
+            android:layout_alignEnd="@+id/register_sign"
+            android:layout_marginBottom="30dp"
+            android:text="@string/register_login"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
